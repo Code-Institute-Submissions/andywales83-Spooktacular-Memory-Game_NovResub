@@ -8,3 +8,13 @@ body {
     height: 100vh;
     background-color: orange;
 }
+
+.game-container {
+    width: 750px;
+    height: 750px;
+    border: 2px solid green;
+}
+
+.front-face, .back-face{
+    border: 2px solid yellow;
+}
