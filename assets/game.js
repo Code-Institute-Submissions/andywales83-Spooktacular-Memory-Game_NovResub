@@ -20,6 +20,17 @@ function flipCard() {
         secondCard = this;
 
         // do cards match
+        if (firstCard.dataset.image === secondCard.dataset.image) {
+            // if cards match
+            firstCard.removeEventListener('click', flipCard);
+            secondCard.removeEventListener('click', flipCard);
+        } else {
+            // if cards don't match
+            setTimeout(() => {
+                firstCard.classList.remove('flip');
+                secondCard.classList.remove('flip');
+            }, 1500)
+        }
     }
 }
 
