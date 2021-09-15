@@ -3,10 +3,15 @@ const cards = document.querySelectorAll('.game-card');
 
 // logic for first and second card flip
 let hasFlippedCard = false;
+let lockBoard = false;
 let firstCard, secondCard;
 
 // declare flipCard function
 function flipCard() {
+
+    // statement to lock board on matching cards
+    if (lockBoard) return;
+
     this.classList.add('flip');
 
     // condition for fliping card on click
@@ -43,10 +48,14 @@ function disableCards() {
 
 // function that unflips the cards if they don't match
 function unflipCards() {
+    lockBoard = true;
+
     // if cards don't match
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
+
+        lockBoard = false;
     }, 1500);
 }
 
