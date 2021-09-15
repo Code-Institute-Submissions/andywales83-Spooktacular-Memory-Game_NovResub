@@ -48,6 +48,15 @@ h1 {
     cursor: pointer;
 }
 
+.fa-star {
+    color: #2f4858;
+}
+
+.timer {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
 /*  ---------- game styling ---------- */
 
 .game-container {

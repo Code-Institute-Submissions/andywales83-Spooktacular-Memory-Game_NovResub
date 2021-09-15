@@ -1,3 +1,6 @@
+// declare variable for star icons
+const stars = document.querySelectorAll('.fa-star');
+
 // List memory card elements
 const cards = document.querySelectorAll('.game-card');
 
