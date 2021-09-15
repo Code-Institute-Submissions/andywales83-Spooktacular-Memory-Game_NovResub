@@ -11,6 +11,7 @@ function flipCard() {
 
     // statement to lock board on matching cards
     if (lockBoard) return;
+    if (this === firstCard) return;
 
     this.classList.add('flip');
 
@@ -44,6 +45,8 @@ function disableCards() {
     // if cards match
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+
+    resetBoard()
 }
 
 // function that unflips the cards if they don't match
@@ -55,8 +58,14 @@ function unflipCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
 
-        lockBoard = false;
+        resetBoard()
     }, 1500);
+}
+
+// function to reset board after each round
+function resetBoard() {
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
 }
 
 // add click event listener
