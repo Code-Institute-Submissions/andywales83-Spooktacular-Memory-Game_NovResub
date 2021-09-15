@@ -14,24 +14,40 @@ function flipCard() {
         // first click
         hasFlippedCard = true;
         firstCard = this;
-    } else {
-        // second click
-        hasFlippedCard = false;
-        secondCard = this;
 
-        // do cards match
-        if (firstCard.dataset.image === secondCard.dataset.image) {
-            // if cards match
-            firstCard.removeEventListener('click', flipCard);
-            secondCard.removeEventListener('click', flipCard);
-        } else {
-            // if cards don't match
-            setTimeout(() => {
-                firstCard.classList.remove('flip');
-                secondCard.classList.remove('flip');
-            }, 1500)
-        }
+        return;
     }
+
+    // second click
+    hasFlippedCard = false;
+    secondCard = this;
+
+
+    checkForMatch()
+}
+
+// function to check matching of cards
+function checkForMatch() {
+    // do cards match
+    let isMatch = firstCard.dataset.image === secondCard.dataset.image;
+
+    isMatch ? disableCards() : unflipCards();
+}
+
+// function to diable cards if they match
+function disableCards() {
+    // if cards match
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+}
+
+// function that unflips the cards if they don't match
+function unflipCards() {
+    // if cards don't match
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }, 1500);
 }
 
 // add click event listener
