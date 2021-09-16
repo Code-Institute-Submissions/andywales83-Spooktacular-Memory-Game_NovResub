@@ -49,10 +49,13 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 ---
 ## Scope
 
-### What a user may expect
+### What a user may expect and how those expectations will be met
 
-### What I expect to achieve
+- To meet the expectations of user, the aim in build and design of the game, is to ensure that the individual is met with a clean and clear user interface from the start, that is striking to the eye, whilst remaining fun. The initial aceess to the game, should bring the user to a main page, that details the instructions for the game and allows for easy navigation to the game page thereafter, with links back and forth, clearly visible and easily accessible. The game screen will be clean in structure and free of any distracting clutter that will draw attention away from the game. 
 
+- For returning users, the game itself will be built to incorporate a score panel, that will give users an indication of the number of moves made, the time taken as the game is being played and a "star" rating system, set against the number of clicks made. The aim in building, will also be to try and achieve a system, where future improvements, will allow the user to click on a number of buttons that may increase the difficulty, through addition of extra cards to the game screen, or an introduction of challenges. Along side the plans to incorporate additionan difficulties, is the idea of keeping the game feeling fresh and exciting, by incorporating the future introduction of additional themes, and giving the game a more generic UI overhaul, allowing the themes to be standalone. 
+
+- For frequent users, the site could include further introduction of an additional page that allows the user to leave feedback on general usage, or on any bugs that may appear from additional features. The additional pages will be used to incorporate additional information from the creator, regarding new themes being implemented, or the introduction of new games that are in the pipeline. The page will provide links to the creators social media pages or GitHub repository, where sers can follow any developments. 
 ---
 
 ## Skeleton
