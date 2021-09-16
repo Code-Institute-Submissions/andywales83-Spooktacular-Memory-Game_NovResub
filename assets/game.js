@@ -1,17 +1,29 @@
 // declare variable for star icons
 const starsContainer = document.querySelector(".stars");
 
+
 // declare the variable for number of moves
 let moves = 0; 
 let counter = document.querySelector(".moves");
 
+
+// Declare variables for the timer function
+let timerContainer = document.querySelector(".timer");
+
+let timerId = setInterval(countSeconds, 1000);
+let secondsElapsed = 0;
+let minutesElapsed = 0;
+
+
 // List memory card elements
 const cards = document.querySelectorAll('.game-card');
+
 
 // logic for first and second card flip
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+
 
 // declare flipCard function
 function flipCard() {
@@ -27,7 +39,9 @@ function flipCard() {
         // first click
         hasFlippedCard = true;
         firstCard = this;
-
+        
+        // updateTimer();
+        
         return;
     }
 
@@ -40,6 +54,7 @@ function flipCard() {
     updateScoreCounter();
 }
 
+
 // function to check matching of cards
 function checkForMatch() {
     // do cards match
@@ -47,6 +62,7 @@ function checkForMatch() {
 
     isMatch ? disableCards() : unflipCards();
 }
+
 
 // function to disable cards if they match
 function disableCards() {
@@ -56,6 +72,7 @@ function disableCards() {
 
     resetBoard()
 }
+
 
 // function that unflips the cards if they don't match
 function unflipCards() {
@@ -70,11 +87,13 @@ function unflipCards() {
     }, 1500);
 }
 
+
 // function to reset board after each round
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
+
 
 // shuffle the deck for randomisation
 (function shuffle() {
@@ -84,8 +103,10 @@ function resetBoard() {
     });
 })();
 
+
 // add click event listener
 cards.forEach(card => card.addEventListener('click', flipCard));
+
 
 // function for tracking moves
 function updateScoreCounter() {
@@ -100,3 +121,27 @@ function updateScoreCounter() {
     };
 };
 
+
+// declare timer function
+function countSeconds() {
+
+    secondsElapsed++;
+
+    // add 1 minute for every 60 secs elapsed
+    if (secondsElapsed % 60 === 0) {
+        minutesElapsed++;
+        secondsElapsed = 0;
+    };
+
+    let secondsDisplay = `${secondsElapsed}`;
+    if (secondsElapsed < 10) {
+        secondsDisplay = `0${secondsElapsed}`
+    };
+
+    let minutesDisplay = `${minutesElapsed}`;
+    if (minutesElapsed < 10) {
+        minutesDisplay = `0${minutesElapsed}`
+    };
+
+    timerContainer.innerText = `${minutesDisplay}:${secondsDisplay}`
+};
