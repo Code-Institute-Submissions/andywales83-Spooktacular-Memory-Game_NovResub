@@ -1,10 +1,9 @@
 // declare variable for star icons
-const stars = document.querySelectorAll(".fa-star");
-
+const starsContainer = document.querySelector(".stars");
 
 // declare the variable for number of moves
 let moves = 0; 
-let counter = document.querySelector("moves");
+let counter = document.querySelector(".moves");
 
 // List memory card elements
 const cards = document.querySelectorAll('.game-card');
@@ -37,7 +36,8 @@ function flipCard() {
     secondCard = this;
 
 
-    checkForMatch()
+    checkForMatch();
+    updateScoreCounter();
 }
 
 // function to check matching of cards
@@ -88,9 +88,15 @@ function resetBoard() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 // function for tracking moves
-function moveCounter() {
+function updateScoreCounter() {
     moves++;
     counter.innerHTML = moves;
-}
 
-moveCounter();
+    // set the star rating based on the number of moves made
+    if (moves === 10) {
+        starsContainer.firstElementChild.remove();
+    } else if (moves === 15) {
+        starsContainer.firstElementChild.remove();
+    };
+};
+
