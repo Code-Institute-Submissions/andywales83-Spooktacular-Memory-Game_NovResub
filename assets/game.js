@@ -1,5 +1,10 @@
 // declare variable for star icons
-const stars = document.querySelectorAll('.fa-star');
+const stars = document.querySelectorAll(".fa-star");
+
+
+// declare the variable for number of moves
+let moves = 0; 
+let counter = document.querySelector("moves");
 
 // List memory card elements
 const cards = document.querySelectorAll('.game-card');
@@ -43,7 +48,7 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
 }
 
-// function to diable cards if they match
+// function to disable cards if they match
 function disableCards() {
     // if cards match
     firstCard.removeEventListener('click', flipCard);
@@ -81,3 +86,11 @@ function resetBoard() {
 
 // add click event listener
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+// function for tracking moves
+function moveCounter() {
+    moves++;
+    counter.innerHTML = moves;
+}
+
+moveCounter();
