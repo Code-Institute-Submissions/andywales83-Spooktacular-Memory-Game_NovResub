@@ -25,6 +25,9 @@ let lockBoard = false;
 let firstCard, secondCard;
 
 
+// restart game function
+let restart = document.querySelector(".restart").addEventListener("click")
+
 // declare flipCard function
 function flipCard() {
 
@@ -88,7 +91,7 @@ function unflipCards() {
 }
 
 
-// function to reset board after each round
+// function to reset board after each round of 2 clicks
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
