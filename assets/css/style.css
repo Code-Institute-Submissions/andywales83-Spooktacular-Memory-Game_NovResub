@@ -46,12 +46,14 @@ h1 {
     padding: 30px;
   }
   .ghost-1 {
-    height: 400px;
+    height: 350px;
+    width: 350px;
     margin:auto
   }
   
   .ghost-2 {
-    height: 400px;
+    height: 350px;
+    width: 350px;
     margin: auto;
   }
   
