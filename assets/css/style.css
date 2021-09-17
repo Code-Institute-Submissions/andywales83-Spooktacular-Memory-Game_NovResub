@@ -22,6 +22,54 @@ h1 {
     margin: 20px 0px;
 }
 
+/* ---------- Welcome Page Styling ---------- */
+
+.sub-header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+  }
+  
+  .instructions-container {
+    display: flex;
+    
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border: 1px solid black;
+  }
+  
+  .instructions {
+    max-width: 800px;
+    border-radius: 15px;
+    background-color: ivory;
+    text-align: justify;
+    padding: 30px;
+  }
+  .ghost-1 {
+    height: 400px;
+    margin:auto
+  }
+  
+  .ghost-2 {
+    height: 400px;
+    margin: auto;
+  }
+  
+  .game-btn {
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+  }
+  
+  .start-game {
+    font-size: 20px;
+    color: ivory;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+  }
+
 /* ---------- score panel styling ---------- */
 .score-panel {
     display: flex;
