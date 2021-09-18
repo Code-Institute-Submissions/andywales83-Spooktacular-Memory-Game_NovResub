@@ -62,8 +62,17 @@ h1 {
     max-width: 800px;
     border-radius: 15px;
     background-color: ivory;
-    text-align: justify;
+    text-align: center;
     padding: 30px;
+}
+.instructions h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.instructions p {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .ghost-1 {
@@ -199,6 +208,8 @@ button {
 .front-face {
     transform: rotateY(180deg);
 }
+
+
 
 /* ---------- Modal Popup Styling ---------- */
 
