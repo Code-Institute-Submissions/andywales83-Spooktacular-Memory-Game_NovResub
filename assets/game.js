@@ -40,8 +40,6 @@ function flipCard() {
         hasFlippedCard = true;
         firstCard = this;
         
-        // updateTimer();
-        
         return;
     }
 
@@ -145,6 +143,16 @@ function countSeconds() {
 
     timerContainer.innerText = `${minutesDisplay}:${secondsDisplay}`
 };
+
+// pause the timer
+var pause = document.querySelector('.pause');
+
+pause.addEventListener('click', pauseTimer);
+
+function pauseTimer(evt) {
+    clearInterval(timerId)
+};
+
 
 // congratulations modal
 var modal = document.querySelector('.modal');
