@@ -1,3 +1,7 @@
+// List memory card elements
+const cards = document.querySelectorAll('.game-card');
+
+
 // declare variable for star icons
 const starsContainer = document.querySelector(".stars");
 
@@ -13,10 +17,6 @@ let timerContainer = document.querySelector(".timer");
 let timerId = setInterval(countSeconds, 1000);
 let secondsElapsed = 0;
 let minutesElapsed = 0;
-
-
-// List memory card elements
-const cards = document.querySelectorAll('.game-card');
 
 
 // logic for first and second card flip
@@ -147,11 +147,18 @@ function countSeconds() {
 // pause the timer
 var pause = document.querySelector('.pause');
 
-pause.addEventListener('click', pauseTimer);
+pause.addEventListener('click', function(evt) {
+    clearInterval(timerId);
+    lockBoard = true
+});
 
-function pauseTimer(evt) {
-    clearInterval(timerId)
-};
+// start the timer
+var resume = document.querySelector('.resume');
+
+resume.addEventListener('click', function(evt) {
+    setInterval(countSeconds, 1000);
+    lockBoard = false;
+});
 
 
 // congratulations modal
@@ -163,4 +170,21 @@ var close = document.querySelector('.close')
 // close the modal after pop-up
 close.onClick = function() {
     modal.style.display = "none"
+}
+
+function congratulations() {
+    if (matchedCards.length === 12){
+        clearInterval(timerId);
+        finalTime = timer.innerHTML;
+
+        modal.style.display = "initial";
+
+        var starRating = document.querySelector(".stars").innerHTML;
+
+        document.getElementById("finalMove").innerHTML = moves;
+        document.getElementById("starRating").innerHTML = starRating;
+        document.getElementById("totalTime").innerHTML = finalTime;
+
+        close();
+    }
 }
