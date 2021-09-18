@@ -8,12 +8,13 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #ffa500;
     font-family: 'Oswald', sans-serif;
     position: relative;
+    max-width: var(--content-max-width);
 }
 
 h1 {
@@ -214,11 +215,18 @@ button {
 /* ----------- Footer Styling ---------- */
 
 footer {
-    height: 50px;
-    position: absolute;
+    height: 60px;
     bottom: 0;
     width: 100%;
     background-color: #006572;
+    padding: 10px 0 10px 0;
+}
+
+footer p {
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Creepster', sans-serif;
 }
 
 /* ---------- Modal Popup Styling ---------- */
@@ -316,7 +324,10 @@ footer {
     .game-container {
         width: 95%;
     }
+
 }
+
+
 
 @media screen and (max-width: 768px) {
  
@@ -326,6 +337,10 @@ footer {
     
     h1 {
         font-size: 3.2rem;
+    }
+
+    .instructions{
+        width: 80%;
     }
 
     .ghost-1, .ghost-2 {
