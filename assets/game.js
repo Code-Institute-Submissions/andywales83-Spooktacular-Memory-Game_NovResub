@@ -25,9 +25,6 @@ let lockBoard = false;
 let firstCard, secondCard;
 
 
-// restart game function
-let restart = document.querySelector(".restart").addEventListener("click")
-
 // declare flipCard function
 function flipCard() {
 
@@ -148,3 +145,14 @@ function countSeconds() {
 
     timerContainer.innerText = `${minutesDisplay}:${secondsDisplay}`
 };
+
+// congratulations modal
+var modal = document.querySelector('.modal');
+
+// get the modal close button 
+var close = document.querySelector('.close')
+
+// close the modal after pop-up
+close.onClick = function() {
+    modal.style.display = "none"
+}

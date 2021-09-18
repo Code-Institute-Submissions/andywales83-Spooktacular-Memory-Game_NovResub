@@ -186,6 +186,7 @@ h1 {
 	position: relative;
 	transition: all 5s ease-in-out;
 	font-family: 'Oswald', cursive;
+    display: none;
 }
 
 .popup h2 {
