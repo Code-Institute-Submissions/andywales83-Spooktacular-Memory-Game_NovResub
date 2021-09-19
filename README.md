@@ -61,6 +61,27 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
 ## Skeleton
 
+### Initial Layout
+
+- The basic layout of the site was wireframed using Balsamiq. The mockup's were created to give an initial view of what the welcome and game pages may look like on mobile, tablet and desktop.
+
+- The website is built over two main pages:
+
+    1. The welcome page - introduces players to the game and its instructions for use.
+    2. The game page - provides access to the game deck and the move, time and rating panel
+
+#### Welcome Page Wireframes
+
+![Welcome page](Documentation/wireframes/welcome-screen-mobile.png)
+![welcome page](Documentation/wireframes/welcome-screen-tablet.png )
+![Welcome page](Documentation/wireframes/welcome-screen-desktop.png)
+
+#### Game Page Wireframes
+
+![Game page](Documentation/wireframes/game-screen-mobile.png)
+![Game page](Documentation/wireframes/game-screen-tablet.png)
+![Game page](Documentation/wireframes/game-screen-desktop.png)
+
 ---
 
 ## Features
