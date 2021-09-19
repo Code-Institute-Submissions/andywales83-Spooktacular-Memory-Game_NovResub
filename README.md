@@ -90,7 +90,7 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
 ## Technologies Used
 
-- This project uses the core programming languages of HTML5 and CSS3.
+- This project uses the core programming languages of HTML5 and CSS3 JavaScript.
 
 - Github 
     - The project uses Github as the main repository storage space for this website
@@ -99,7 +99,6 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
 - JavaScript 
     - JavaScript has been used for all functionality of the game board.
-    - Bootstrap was also used to implement design features such as the nav bartoggler, cards, contact form styling and the footer.
 
 - Google Fonts
     - The project uses imported font families from the Google Font platform.
@@ -114,7 +113,28 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
 ## Testing
 
+### Validator testing
 
+- **HTML**
+    - All HTML Code was passed through the official W3C Validator, with th ereport returning no errors on the index.html file. There were two warning given upon testing of the game.html file, however, these relate to headers missing from sections of the page that do not require headings.
+
+![Validator Testing](Documentation/readme-images/welcome-page-validation.png)
+![Validator Testing](Documentation/readme-images/game-page-validation.png)
+
+- **CSS**
+    - All styling of the webpage, has been the result of vanilla css styling and there has been no use of any libraries. Direct testing of the site's css file, via direct input, shows only one error being reported. This error relates to the code for styling the Audio player. 
+    
+![W3C CSS Validator](Documentation/readme-images/css-validation.png)
+![W3C CSS Validator](Documentation/readme-images/css-validation-warning.png)
+
+- **Lighthouse Testing**
+    - The site has been run through the Lighthouse test on Google Developer Tools and achieved the following results for mobile:
+    
+    ![Lighthouse Test Result](Documentation/readme-images/lighthouse-testing-mobile.png)
+
+    and the following results for desktop:
+
+    ![Lighthouse Test Result](Documentation/readme-images/lighthouse-testing-desktop.png)
 ---
 
 ## Deployment
