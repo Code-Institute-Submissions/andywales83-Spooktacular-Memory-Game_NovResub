@@ -90,6 +90,26 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
 ## Technologies Used
 
+- This project uses the core programming languages of HTML5 and CSS3.
+
+- Github 
+    - The project uses Github as the main repository storage space for this website
+    - An extension of Github, Gitpod was used as the main development platform when building the site and all development stages were committed to Git and pushed to Github accordingly.
+    - Github Pages is then used to host a live version of the webpage following the deployment process outlined below.
+
+- JavaScript 
+    - JavaScript has been used for all functionality of the game board.
+    - Bootstrap was also used to implement design features such as the nav bartoggler, cards, contact form styling and the footer.
+
+- Google Fonts
+    - The project uses imported font families from the Google Font platform.
+
+- Balsamiq 
+    - The balsamiq platform was used for creation of the wireframe designs.
+
+- Am I Responsive
+    - Am I Responsive was used to creat the initial mock-up image at the top of the README showing the site on the different display types.
+
 ---
 
 ## Testing
@@ -98,6 +118,33 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
 ## Deployment
 
+This project has been created using the Gitpod IDE. Through numerous occasions, the project development has been pushed to Git and Committed in full, to Github. This has been carried out using the built in fuction of Gitpod
+
+For live viewing on Github Pages, the project was deployed using the following method:
+
+- Log in to Github.
+- Select the required Github repository.
+- Make sure that the repository is on the Master branch.
+- Clicking on the Settings tab from the menu listed under the repository name.
+- Selecting the Pages tab from the Settings menu, that is listed down the left side of the screen.
+- Clicking on the button under the sources section labeled None and selecting Master Branch
+- Clicking on the save button, to activate the deployment to Github Pages. 
+
+## Cloning
+
+To make a local clone of a Github Repository:
+
+- Navigate to the main page of the repository
+- Above the list of files, click on the green button titled Code
+- If you choose to clone using HTTPS, under the "Clone with HTTPS", click on the icon to the right of the repository URL to copy the link
+- Open up Gitbash
+- Change the name of the working directory to the location where you want the cloned directory to go
+- Type git clone, and then paste the URL that you copied earlier 
+- press enter to create your local clone
+
 ---
 
 ## Credits
+
+### Genreal Credits
+- Brian Macharia - Mentor support, guidance on my idea and how to structure my time working on the project. Also for the review of layout, usability and functions.

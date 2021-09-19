@@ -115,6 +115,11 @@ button {
     background-color: black;
 }
 
+button a{
+    text-decoration: none;
+    color: orange;
+}
+
 button:active {
     transform: scale(1.3);
 }
