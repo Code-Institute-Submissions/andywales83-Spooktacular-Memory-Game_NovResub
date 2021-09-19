@@ -1,8 +1,9 @@
 # Spooktacular Memory Game
 
-[View the live project here]()
+[View the live project here](https://andywales83.github.io/Spooktacular-Memory-Game/)
 
-![Am I responsive image]()
+![Am I responsive image](Documentation/readme-images/welcome-screen-image.jpg)
+![Am I responsive image](Documentation/readme-images/game-screen-image.jpg)
 
 ---
 
