@@ -161,30 +161,3 @@ resume.addEventListener('click', function(evt) {
 });
 
 
-// congratulations modal
-var modal = document.querySelector('.modal');
-
-// get the modal close button 
-var close = document.querySelector('.close')
-
-// close the modal after pop-up
-close.onClick = function() {
-    modal.style.display = "none"
-}
-
-function congratulations() {
-    if (matchedCards.length === 12){
-        clearInterval(timerId);
-        finalTime = timer.innerHTML;
-
-        modal.style.display = "initial";
-
-        var starRating = document.querySelector(".stars").innerHTML;
-
-        document.getElementById("finalMove").innerHTML = moves;
-        document.getElementById("starRating").innerHTML = starRating;
-        document.getElementById("totalTime").innerHTML = finalTime;
-
-        close();
-    }
-}
