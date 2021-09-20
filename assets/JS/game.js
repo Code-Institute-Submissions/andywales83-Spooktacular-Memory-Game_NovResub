@@ -68,7 +68,7 @@ function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 
-    resetBoard()
+    resetBoard();
 }
 
 
@@ -81,7 +81,7 @@ function unflipCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
 
-        resetBoard()
+        resetBoard();
     }, 1500);
 }
 
@@ -116,8 +116,8 @@ function updateScoreCounter() {
         starsContainer.firstElementChild.remove();
     } else if (moves === 15) {
         starsContainer.firstElementChild.remove();
-    };
-};
+    }
+}
 
 
 // declare timer function
@@ -129,27 +129,27 @@ function countSeconds() {
     if (secondsElapsed % 60 === 0) {
         minutesElapsed++;
         secondsElapsed = 0;
-    };
+    }
 
     let secondsDisplay = `${secondsElapsed}`;
     if (secondsElapsed < 10) {
-        secondsDisplay = `0${secondsElapsed}`
-    };
+        secondsDisplay = `0${secondsElapsed}`;
+    }
 
     let minutesDisplay = `${minutesElapsed}`;
     if (minutesElapsed < 10) {
-        minutesDisplay = `0${minutesElapsed}`
-    };
+        minutesDisplay = `0${minutesElapsed}`;
+    }
 
-    timerContainer.innerText = `${minutesDisplay}:${secondsDisplay}`
-};
+    timerContainer.innerText = `${minutesDisplay}:${secondsDisplay}`;
+}
 
 // pause the timer
 var pause = document.querySelector('.pause');
 
 pause.addEventListener('click', function(evt) {
     clearInterval(timerId);
-    lockBoard = true
+    lockBoard = true;
 });
 
 // start the timer

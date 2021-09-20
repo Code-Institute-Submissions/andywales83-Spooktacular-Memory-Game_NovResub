@@ -108,6 +108,18 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
     - To keep the design consistent, there are again, two images of ghosts eitherside of the instructions container, to add a sense of visual attraction to the gane.
 
 ![game-page](Documentation/readme-images/game-screen.png)
+
+### Features To Be Implemented In Future
+
+- #### Modal Pop Up
+    -  A future implementation would be the development of a modal pop up that is activated upon completion of the game. The modal would be designed to incorporate a congratulations message to the player, with an indication of the time taken to complete the game, what their final star rating is and in how many moves the game was completed. 
+
+- #### Additional Game Decks
+    - Another future implementation could be the introduction of additional game decks, with a more generic initial user interface. The main welcome page would be adjusted to have optional functionality, that allows users to pick from different themmed game decks, such as Christmas images.
+
+- #### Bigger Game Decks
+    - As an addditional implementation, i'd like to add the option to increase the deck size of cards used. This would be done with three levels in mind, the cureent game deck of 12 cards being easy, a medium option that uses 24 cards and a hard option, that uses all 20 cards that are available. 
+
 ---
 
 ## Technologies Used
