@@ -86,6 +86,28 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
 ## Features
 
+### Existing Features
+
+- #### Welcome Page
+    - The welcome page has been designed to be visually clean and simplistic whilst giving individuals an immediate sense of what the game is about. 
+    - The page features a small navigation bar linking between the game and homepage. The navigaton has an added hover class. that turns the background black and the text orange when the mouse hovers over each link.
+    - The centralised white instructions section was designed with contrast in mind, making it visually distinguishable from the bright orange background. 
+    - Keeping with the theme of Halloween, there are two images of ghosts eitherside of the instructions container, to add a sense of visual attraction to the gane.
+    - The page has a large black and orange button placed below the instructions, as an additional link to the game page, which gets slightly larger in size as the button is clicked
+
+
+![welcome-page](Documentation/readme-images/welcome-screen.png)
+
+- #### Game Page
+    - The game page has agin been designed to be visually appealing and hosts a number of features.
+    - The top of the game page hosts media controls for the playing of the halloween sound clip that has been uploaded to the build. This was input to add additional fun factor to the game.
+    - The page again features a small navigation bar linking between the game and homepage. The navigaton has an added hover class. that turns the background black and the text orange when the mouse hovers over each link.
+    - Placed directly under the main title of the game, is the score panel that holds the game timer, the move counter and the star rating visuals, which removes a star each time a specific number of moves have been made. This was added to give an additional challenge to players. This section also houses a pause and play button that starts and stops the timer.
+    - With the start and stop timer, I have added the functionality of the game being locked, when the timer is paused, only to allow players to seect cards again, once the play button has been clicked and the game is resumed. 
+    - The game board was designed to be centralised on the screen, in an attempt to draw the players eye straight to it.
+    - To keep the design consistent, there are again, two images of ghosts eitherside of the instructions container, to add a sense of visual attraction to the gane.
+
+![game-page](Documentation/readme-images/game-screen.png)
 ---
 
 ## Technologies Used
@@ -112,6 +134,10 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 ---
 
 ## Testing
+
+### Feature Testing
+
+
 
 ### Validator testing
 
