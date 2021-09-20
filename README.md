@@ -137,7 +137,14 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
 ### Feature Testing
 
+- I have tested that all links in the navigation bar and button work, and the user is directed to the correct page when clicking.
+- I have tested the functionality of the components of the game page.
+    - I have tested that the timer starts upon loading of the screen and can be paused and resumed at any time.
+    - I have tested the move counter works upon the click of every second card.
+    - I have tested that the star rating functionality works when a certain number of moves are made.
+    - I have tested the flipping of cards and that the cards remain flipped, when they match and unflip when they don't.
 
+![game-function-testing](Documentation/readme-images/timer-star-move-testing.png)
 
 ### Validator testing
 
@@ -195,3 +202,10 @@ To make a local clone of a Github Repository:
 
 ### Genreal Credits
 - Brian Macharia - Mentor support, guidance on my idea and how to structure my time working on the project. Also for the review of layout, usability and functions.
+
+- The slack community - for answering questions and providing support wherever it has been needed.
+
+ - Tutor support for assisting me with the pause/resume function
+
+ - JavaScript code content can be attributed to Marina Ferrira, who posted a Youtube walkthrough on behalf of freeCodeCamp, for the functionality of the game board.
+    - The video can be found here: https://www.youtube.com/watch?v=ZniVgo8U7ek&t=4s
