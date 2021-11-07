@@ -180,6 +180,12 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
     and the following results for desktop:
 
     ![Lighthouse Test Result](Documentation/readme-images/lighthouse-testing-desktop.png)
+
+### Bug Fixes
+
+- **Console Function Errors**
+    - Upon inspection, there were two errors appearing in the console, when the pause and resume buttons were being clicked. This was from unused "onclick" functions being added to the game.html code for the pause and resume buttons. These functions should have been removed when the functionality was built directly into the JavaScript file.
+        - the two unused functions, have now been removed from the game.html code and the console has been rechecked. There are no further errors being shown when the pause and resume buttons are used.
 ---
 
 ## Deployment
