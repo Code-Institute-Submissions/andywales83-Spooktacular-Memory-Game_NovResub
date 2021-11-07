@@ -156,6 +156,7 @@ pause.addEventListener('click', function(evt) {
 var resume = document.querySelector('.resume');
 
 resume.addEventListener('click', function(evt) {
+    clearInterval(timerId);
     timerId = setInterval(countSeconds, 1000);
     lockBoard = false;
 });

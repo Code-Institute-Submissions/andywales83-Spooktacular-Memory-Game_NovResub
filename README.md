@@ -181,11 +181,17 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 
     ![Lighthouse Test Result](Documentation/readme-images/lighthouse-testing-desktop.png)
 
-### Bug Fixes
+### Known Bugs and Fixes
 
 - **Console Function Errors**
-    - Upon inspection, there were two errors appearing in the console, when the pause and resume buttons were being clicked. This was from unused "onclick" functions being added to the game.html code for the pause and resume buttons. These functions should have been removed when the functionality was built directly into the JavaScript file.
-        - the two unused functions, have now been removed from the game.html code and the console has been rechecked. There are no further errors being shown when the pause and resume buttons are used.
+    1. Upon inspection, there were two errors appearing in the console, when the pause and resume buttons were being clicked. This was from unused "onclick" functions being added to the game.html code for the pause and resume buttons. These functions should have been removed when the functionality was built directly into the JavaScript file.
+
+    2. A further issue was identified with the functionality of the game timer. Each time the user clicks the resume button, when the game timer is already running, the timer would start a new interval, essentially increasing the speed of the timer. 
+ 
+- **Fixes** 
+    1. The two unused pause and resume functions, have now been removed from the game.html code and the console has been rechecked. There are no further errors being shown when the pause and resume buttons are used.
+
+    2. Added the clearInterval functionality to the code, in the start timer block, so that no new intervals could be created when clicking on the resume button multiple times. This was tested in the game using the resume functionality when the timer was running and the timer no longer speeds up.  
 ---
 
 ## Deployment
