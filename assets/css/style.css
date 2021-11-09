@@ -197,9 +197,9 @@ button:active {
 }
 
 .game-card {
-    width: calc(25% - 4px);
-    height: calc(33.333% - 5px);
-    margin: 2px;
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
@@ -251,7 +251,51 @@ footer h3 {
 
 /* ---------- media queries ---------- */
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
+    
+    .ghost-1, .ghost-2 {
+        display: none;
+    }
+    .instructions{
+        width: 80%;
+    }
+
+    .game-container {
+        width: 95%;
+        height: 950px;
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    .navbar a {
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .instructions{
+        width: 80%;
+    }
+
+    .ghost-1, .ghost-2 {
+        display: none;
+    }
+
+    .score-panel {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    .game-container {
+        width: 95%;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
    
     /* general page styling */
     .navbar a {
@@ -289,51 +333,13 @@ footer h3 {
         height: 400px;
     }
 
-}
-
-@media screen and (max-width: 768px) {
- 
-    .navbar a {
-        margin: 0;
-    }
-    
-    h1 {
-        font-size: 3.2rem;
-    }
-
-    .instructions{
-        width: 80%;
-    }
-
-    .ghost-1, .ghost-2 {
-        display: none;
-    }
-
-    .score-panel {
-        width: 85%;
-        font-size: 1rem;
-    }
-
-    .game-container {
-        width: 95%;
-    }
+    .game-card {
+        width: calc(25% - 4px);
+        height: calc(33.333% - 4px);
+        margin: 2px;
 }
 
 
 
-@media screen and (max-width: 1024px) {
-    
-    .ghost-1, .ghost-2 {
-        display: none;
-    }
-    .instructions{
-        width: 80%;
-    }
 
-    .game-container {
-        width: 95%;
-        height: 950px;
-    }
 
-    
-}
