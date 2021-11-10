@@ -191,7 +191,7 @@ The game is based on a deck of 12 cards, which are laid face down on a surface a
 - **Fixes** 
     1. The two unused pause and resume functions, have now been removed from the game.html code and the console has been rechecked. There are no further errors being shown when the pause and resume buttons are used.
 
-    2. Added the clearInterval functionality to the code, in the start timer block, so that no new intervals could be created when clicking on the resume button multiple times. This was tested in the game using the resume functionality when the timer was running and the timer no longer speeds up.
+    2. Added the clearInterval functionality to the code, in the start timer block, so that no new intervals could be created when clicking on the resume button multiple times. This was tested in the game using the resume functionality when the timer was running and the timer no longer speeds up. The added functionality will also mean, that the time will not continue whilst the user keeps clicking the resume button and will onlly continue to count time when the game is being played.
 
 - **Display Fixes**
     1. Feedback highlighted that the game cards lookes squasehd on mobile phone devices, which upon review, showed that the cards did not look in proprtion across the height and width. To fix this, the media queries have been adjusted for mobile and tablet displays, to give a more even proportioning to the cards. 
